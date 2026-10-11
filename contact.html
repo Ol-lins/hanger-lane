@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Hanger Lane</title>
+  <meta name="description" content="Book a pickup at Hanger Lane laundry, Tesano, Accra.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="rainbow-bar"></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">Hanger Lane</span>
+        <span class="brand-sub">Tesano</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="kicker">Contact</span>
+        <h1>Book a pickup, or walk in.</h1>
+        <p class="lead">Tell us the service, the day, and where to collect the bag.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <div>
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+              <p class="error" id="name-error"></p>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+              <p class="error" id="email-error"></p>
+            </div>
+            <div class="full">
+              <label for="subject">What do you need?</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a service</option>
+                <option value="fold">Wash and fold</option>
+                <option value="iron">Wash and iron</option>
+                <option value="pickup">Pickup and return</option>
+                <option value="student">Student weekly bag</option>
+                <option value="family">Family Saturday run</option>
+                <option value="shop">Salon or kitchen linen</option>
+              </select>
+              <p class="error" id="subject-error"></p>
+            </div>
+            <div class="full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Street or hostel, preferred day, and about how many kilos or shirts."></textarea>
+              <p class="error" id="message-error"></p>
+            </div>
+          </div>
+          <button class="btn" type="submit">Send request</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+
+        <aside class="contact-aside">
+          <h2>Find us</h2>
+          <p>Hanger Lane<br>Tesano, Accra</p>
+          <p>Email: <a href="mailto:2526110011@live.gctu.edu.gh">2526110011@live.gctu.edu.gh</a></p>
+          <p>Mon–Sat, 8:00 a.m. – 6:30 p.m.<br>Pickup: 9:00 a.m. and 4:00 p.m.</p>
+          <div class="map-wrap">
+            <iframe title="Map of Tesano, Accra" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.246%2C5.585%2C-0.218%2C5.605&amp;layer=mapnik&amp;marker=5.595%2C-0.232"></iframe>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <strong>Hanger Lane</strong>
+        <p>Laundry in Tesano, Accra. Wash, fold, iron, and pickup.</p>
+      </div>
+      <div>
+        <strong>Pages</strong>
+        <ul class="footer-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Visit</strong>
+        <p>Tesano, Accra<br>Mon–Sat, 8:00 a.m. – 6:30 p.m.<br>2526110011@live.gctu.edu.gh</p>
+      </div>
+    </div>
+    <div class="wrap copyright">© <span id="year">2026</span> Hanger Lane</div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
